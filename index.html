@@ -3,12 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Form with JavaScript</title>
   </head>
   <body>
     <form>
-      <button type="button" onclick="sayHI()">Click me!</button>
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" /><br /><br />
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" placeholder="Enter your age" /><br /><br />
+
+      <input type="button" onclick="sayHI()" value="Click me!" />
     </form>
+
+    <!-- Link to the external JavaScript file -->
     <script src="functions.js"></script>
   </body>
 </html>
