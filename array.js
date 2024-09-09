@@ -12,8 +12,22 @@ for (i = 0; i < array.length; i++) {
       temp = array[j];
       array[j] = array[j + 1];
       array[j + 1] = temp;
-      document.write("<br>Array After Sorting: ");
-      document.write(array);
     }
   }
 }
+
+document.write("<br>Array After Sorting Smaller to the Larger: ");
+document.write(array);
+
+for (i = 0; i < array.length; i++) {
+  for (j = 0; j < array.length - 1; j++) {
+    if (array[j] < array[j + 1]) {
+      temp = array[j];
+      array[j] = array[j + 1];
+      array[j + 1] = temp;
+    }
+  }
+}
+
+document.write("<br>Array After Sorting Larger to the Smaller: ");
+document.write(array);
